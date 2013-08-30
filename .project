@@ -3,6 +3,7 @@
 	<name>cyclos</name>
 	<comment></comment>
 	<projects>
+		<project>otapij</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

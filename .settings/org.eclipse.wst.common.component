@@ -2,7 +2,7 @@
     <wb-module deploy-name="cyclos">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="cyclos"/>
         <property name="java-output-path" value="/cyclos/build/classes"/>
+        <property name="context-root" value="open-cyclos"/>
     </wb-module>
 </project-modules>
