@@ -1,0 +1,30 @@
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<form-beans>
+        <form-bean name="executeTestForm" type="com.puremoneysystems.poc.controls.OTPoCExecuteTestForm" />
+	</form-beans>
+	
+	<action-mappings type="org.apache.struts.config.SecureActionConfig">
+
+
+		<action 
+			path="/admin/otPoC" 
+			type="com.puremoneysystems.poc.controls.OTPoCDisplayAction"
+            input="admin/_otPoC"
+            scope="request">
+			<set-property property="secure" value="true" />
+		</action>
+
+		<action 
+			path="/admin/otPoCExecute" 
+			type="com.puremoneysystems.poc.controls.OTPoCExecuteAction"
+            scope="request">
+			<set-property property="secure" value="true" />
+			<forward name="success" path="/do/admin/otPoC" redirect="true"></forward>
+		</action>
+		
+	
+	</action-mappings>
+
+</struts-config>

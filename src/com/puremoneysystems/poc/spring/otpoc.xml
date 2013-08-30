@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Bean definitions for the Open Transactions Proof of Concept
+ -->
+<beans default-autowire="byName"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd"
+	   >
+	   
+	<bean id="OTPoCServiceLocal" class="com.puremoneysystems.poc.services.OTPoCServiceImpl" />	
+	<bean id="OTPoCService" class="com.puremoneysystems.poc.services.OTPoCServiceSecurity" /> 	
+	<bean id="OTManager" class="nl.strohalm.cyclos.spring.FactoryBeanFromProperties">
+		<constructor-arg value="com.puremoneysystems.poc.utils.OTManager" />
+		<constructor-arg value="cyclos.otManager" />
+		<constructor-arg value="com.puremoneysystems.poc.utils.OTManagerImpl" />
+	</bean>
+	
+</beans>	
