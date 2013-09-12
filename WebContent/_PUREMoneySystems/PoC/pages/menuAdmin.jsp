@@ -2,6 +2,26 @@
 <%@ taglib uri="http://devel.cyclos.org/tlibs/cyclos-core" prefix="cyclos" %>
 
 <cyclos:menu url="/do/admin/home" key="menu.admin.home" />
+<cyclos:menu key="menu.admin.otPoC">
+
+
+	<cyclos:menu url="/do/admin/otPoC/serverState" key="menu.admin.otPoC.serverState" label="Show Server State" />
+	<cyclos:menu url="/do/admin/otPoC/createNewAsset" key="menu.admin.otPoC.createNewAsset" label="Create new Asset Contract" />
+	<cyclos:menu url="/do/admin/otPoC/createNewNym" key="menu.admin.otPoC.createNewNym" label="Create new Nym" />
+	<cyclos:menu url="/do/admin/otPoC/createNewAssetAccount" key="menu.admin.otPoC.createNewAssetAccount" label="Create new Asset Account" />
+	<cyclos:menu url="/do/admin/otPoC/showNymDetails" key="menu.admin.otPoC.showNymDetails" label="Show Nym Details" />
+
+<!-- 
+	
+	- Show Server State
+	- Create new Asset Contract
+	- Create new Nym
+	- Create new Asset Account
+	- Show Nym Details (Account List)
+	
+ -->
+ 
+</cyclos:menu>
 <cyclos:menu key="menu.admin.personal">
 	<cyclos:menu url="/do/admin/adminProfile" key="menu.admin.personal.profile" />
 	<cyclos:menu url="/do/admin/changePassword" key="menu.admin.personal.changePassword" />
@@ -17,7 +37,6 @@
 	<cyclos:menu url="/do/admin/viewErrorLog" key="menu.admin.alerts.errorLog" permission="${AdminSystemPermission.ERROR_LOG_VIEW}" />
 	<cyclos:menu url="/do/admin/searchErrorLog" key="menu.admin.alerts.errorLogHistory" permission="${AdminSystemPermission.ERROR_LOG_VIEW}" />
 </cyclos:menu>
-
 <cyclos:menu key="menu.admin.accounts">
 	<cyclos:menu url="/do/admin/listCurrencies" key="menu.admin.accounts.currencies" permission="${AdminSystemPermission.CURRENCIES_VIEW}" />
 	<cyclos:menu url="/do/admin/listAccountTypes" key="menu.admin.accounts.manage" permission="${AdminSystemPermission.ACCOUNTS_VIEW}" />
@@ -25,7 +44,6 @@
 	<cyclos:menu url="/do/admin/searchScheduledPayments" key="menu.admin.accounts.scheduledPayments" permission="${AdminSystemPermission.ACCOUNTS_SCHEDULED_INFORMATION}" />
 	<cyclos:menu url="/do/admin/selfPayment" key="menu.admin.accounts.systemPayment" permission="${AdminSystemPermission.PAYMENTS_PAYMENT}" />
 	<cyclos:menu url="/do/admin/payment?selectMember=true" key="menu.admin.accounts.memberPayment" permission="${AdminMemberPermission.PAYMENTS_PAYMENT}"/>
-	<cyclos:menu url="/do/admin/otPoC" key="menu.admin.accounts.otPoC" label="Open Transactions - PoC" permission="${AdminSystemPermission.CURRENCIES_VIEW}" />
 </cyclos:menu>
 <cyclos:menu key="menu.admin.usersGroups">
 	<cyclos:menu url="/do/admin/searchMembers" key="menu.admin.usersGroups.members" permission="${AdminMemberPermission.MEMBERS_VIEW}" />
@@ -48,16 +66,6 @@
 	<c:forEach var="memberRecordType" items="${memberRecordTypesInMenu}">
 		<cyclos:menu url="/do/admin/searchMemberRecords?typeId=${memberRecordType.id}&global=true" label="${memberRecordType.label}" />
 	</c:forEach>
-</cyclos:menu>
-<cyclos:menu key="menu.admin.accessDevices">
-	<cyclos:menu url="/do/admin/manageCardTypes" key="menu.admin.accessDevices.cardType.manage" permission="${AdminSystemPermission.CARD_TYPES_VIEW}" />
-	<cyclos:menu url="/do/admin/searchCards" key="menu.admin.accessDevices.cards.search" permission="${AdminMemberPermission.CARDS_VIEW}" />
-	<cyclos:menu url="/do/admin/searchPos" key="menu.admin.accessDevices.pos.search" permission="${AdminMemberPermission.POS_VIEW}" />
-</cyclos:menu>
-<cyclos:menu key="menu.admin.messages">
-	<cyclos:menu url="/do/admin/searchMessages" key="menu.admin.messages.messages" permission="${AdminMemberPermission.MESSAGES_VIEW}" />
-	<cyclos:menu url="/do/admin/listMessageCategories" key="menu.admin.messages.messageCategory" permission="${AdminSystemPermission.MESSAGE_CATEGORIES_VIEW}"/>
-	<cyclos:menu url="/do/admin/searchSmsMailings" key="menu.admin.messages.smsMailings" permission="${AdminMemberPermission.SMS_MAILINGS_VIEW}"/>
 </cyclos:menu>
 <cyclos:menu key="menu.admin.settings">
 	<cyclos:menu url="/do/admin/editLocalSettings" key="menu.admin.settings.local" permission="${AdminSystemPermission.SETTINGS_VIEW}" />
@@ -90,21 +98,10 @@
 	</c:if>
 	<cyclos:menu url="/do/admin/searchInfoTexts" key="menu.admin.messages.infoTexts" permission="${AdminSystemPermission.INFO_TEXTS_VIEW}"/>	
 </cyclos:menu>
-<cyclos:menu key="menu.admin.translation">
-	<cyclos:menu url="/do/admin/searchTranslationMessages" key="menu.admin.translation.application" permission="${AdminSystemPermission.TRANSLATION_VIEW}" />
-	<cyclos:menu url="/do/admin/listMessageSettings" key="menu.admin.translation.internalMessages" permission="${AdminSystemPermission.TRANSLATION_MANAGE_NOTIFICATION}" />
-	<cyclos:menu url="/do/admin/editMailTranslation" key="menu.admin.translation.mails" permission="${AdminSystemPermission.TRANSLATION_MANAGE_MAIL_TRANSLATION}" />
-	<cyclos:menu url="/do/admin/manageTranslationMessages" key="menu.admin.translation.file" permission="${AdminSystemPermission.TRANSLATION_FILE}" />
-</cyclos:menu>
-<cyclos:menu key="menu.admin.reports">
-	<cyclos:menu url="/do/admin/reportsCurrentState" key="menu.admin.reports.current" permission="${AdminSystemPermission.REPORTS_CURRENT}" />
-	<cyclos:menu url="/do/admin/membersListReport" key="menu.admin.reports.members.list" permission="${AdminSystemPermission.REPORTS_MEMBER_LIST}" />
-	<cyclos:menu url="/do/admin/membersTransactionsReport" key="menu.admin.reports.members" permission="${AdminSystemPermission.REPORTS_MEMBER_LIST}" />
-	<cyclos:menu url="/do/admin/membersSmsLogsReport" key="menu.admin.reports.sms" permission="${AdminSystemPermission.REPORTS_SMS_LOGS}" />
-	<cyclos:menu url="/do/admin/statistics" key="menu.admin.reports.statistics" permission="${AdminSystemPermission.REPORTS_STATISTICS}" />
-</cyclos:menu>
 <cyclos:menu key="menu.admin.help">
 	<cyclos:menu url="/do/admin/manual" key="menu.admin.help.manual" />
 	<cyclos:menu url="/do/admin/about" key="menu.about" />
+	<cyclos:menu url="/do/admin/reportsCurrentState" key="menu.admin.reports.current" permission="${AdminSystemPermission.REPORTS_CURRENT}" />
+	<cyclos:menu url="/do/admin/membersListReport" key="menu.admin.reports.members.list" permission="${AdminSystemPermission.REPORTS_MEMBER_LIST}" />
 </cyclos:menu>
 <cyclos:menu url="/do/logout" key="menu.admin.logout" confirmationKey="menu.logout.confirmationMessage"/>

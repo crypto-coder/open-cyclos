@@ -42,16 +42,10 @@ public class OTPoCServiceImpl implements OTPoCServiceLocal {
     }
     
     @Override
-	public String executeTest() {
-    	String testResult = this.otManager.executeTest();
+	public String getServerState() {
+    	String testResult = this.otManager.getServerState();
     	return testResult;
 	}
 
 	
-    @Override
-	public String getLastTestResult() {
-    	String lastTestResult = this.otManager.getLastTestResult();
-    	return lastTestResult;
-	}
-
 }

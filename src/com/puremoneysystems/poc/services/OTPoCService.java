@@ -27,8 +27,6 @@ import nl.strohalm.cyclos.services.Service;
  */
 public interface OTPoCService extends Service {
 
-	String executeTest();
-	
-	String getLastTestResult();
+	String getServerState();
 
 }

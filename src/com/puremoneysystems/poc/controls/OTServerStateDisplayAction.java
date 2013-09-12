@@ -37,7 +37,7 @@ import org.apache.struts.action.ActionForward;
  * Action used to display the Open Transactions Proof of Concept
  * @author chris
  */
-public class OTPoCDisplayAction extends BaseAction {
+public class OTServerStateDisplayAction extends BaseAction {
 
     private OTPoCService otpocService;
 

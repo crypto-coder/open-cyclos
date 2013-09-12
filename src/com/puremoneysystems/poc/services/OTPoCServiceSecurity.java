@@ -38,12 +38,8 @@ public class OTPoCServiceSecurity extends BaseServiceSecurity implements OTPoCSe
     }
 
 	@Override
-	public String executeTest() {
-        return otpocService.executeTest();
+	public String getServerState() {
+        return otpocService.getServerState();
 	}
 
-	@Override
-	public String getLastTestResult() {
-        return otpocService.getLastTestResult();
-	}
 }

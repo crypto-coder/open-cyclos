@@ -20,14 +20,16 @@
 package com.puremoneysystems.poc.utils;
 
 /**
- * Handles the retrieval of {@link Cache} instances
+ * Handles the interaction with an OT instance
  * 
  * @author chris
  */
 public interface OTManager {
 
-	String executeTest();
-
-	String getLastTestResult();
+	
+	
+	
+	
+	String getServerState();
 
 }

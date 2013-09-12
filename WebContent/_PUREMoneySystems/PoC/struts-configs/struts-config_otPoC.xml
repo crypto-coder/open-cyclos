@@ -9,9 +9,9 @@
 
 
 		<action 
-			path="/admin/otPoC" 
-			type="com.puremoneysystems.poc.controls.OTPoCDisplayAction"
-            input="admin/_otPoC"
+			path="/admin/ot/serverState" 
+			type="com.puremoneysystems.poc.controls.OTServerStateDisplayAction"
+            input="admin/ot/_serverState"
             scope="request">
 			<set-property property="secure" value="true" />
 		</action>

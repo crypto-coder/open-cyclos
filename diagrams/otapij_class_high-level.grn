@@ -386,83 +386,6 @@
       <y="-246"/>
    </type>
    <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Contact.java[Contact"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{BitcoinAcct.java[BitcoinAcct"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Acct.java[Acct"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{ContactAcct.java[ContactAcct"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{AskData.java[AskData"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferDataMarket.java[OfferDataMarket"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{RippleServer.java[RippleServer"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Server.java[Server"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{LoomServer.java[LoomServer"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Server.java[Server"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferDataNym.java[OfferDataNym"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{StringMap.java[StringMap"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Blob.java[Blob"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_std__vectorT_unsigned_char_t.java[SWIGTYPE_p_std__vectorT_unsigned_char_t"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Contact.java[Contact"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{ContactAcct.java[ContactAcct"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OTPassword.java[OTPassword"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_void.java[SWIGTYPE_p_void"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
       <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
       <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{WalletData.java[WalletData"/>
       <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{RippleServer.java[RippleServer"/>
@@ -471,141 +394,8 @@
    </relationship>
    <relationship>
       <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{StringMap.java[StringMap"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_std__mapT_std__string_std__string_t.java[SWIGTYPE_p_std__mapT_std__string_std__string_t"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{AddressBook.java[AddressBook"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
       <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferListMarket.java[OfferListMarket"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{BidData.java[BidData"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeListNym.java[TradeListNym"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeDataNym.java[TradeDataNym"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeDataMarket.java[TradeDataMarket"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeListNym.java[TradeListNym"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{BidData.java[BidData"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferDataMarket.java[OfferDataMarket"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferDataMarket.java[OfferDataMarket"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{WalletData.java[WalletData"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{LoomServer.java[LoomServer"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeListMarket.java[TradeListMarket"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeDataMarket.java[TradeDataMarket"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeDataNym.java[TradeDataNym"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{ContactNym.java[ContactNym"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{AddressBook.java[AddressBook"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Contact.java[Contact"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OTPassword.java[OTPassword"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_uint32_t.java[SWIGTYPE_p_uint32_t"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{WalletData.java[WalletData"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{BitcoinAcct.java[BitcoinAcct"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Storage.java[Storage"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_OTPacker.java[SWIGTYPE_p_OTPacker"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OTPassword.java[OTPassword"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_int32_t.java[SWIGTYPE_p_int32_t"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferListNym.java[OfferListNym"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferDataNym.java[OfferDataNym"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OTDBString.java[OTDBString"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{AskData.java[AskData"/>
       <bendpoints>
       </bendpoints>
    </relationship>
@@ -624,85 +414,29 @@
       </bendpoints>
    </relationship>
    <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferListMarket.java[OfferListMarket"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{WalletData.java[WalletData"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{BitcoinServer.java[BitcoinServer"/>
+      <class="edu.buffalo.cse.green.relationship.realization.RealizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{otapi.java[otapi"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{otapiConstants.java[otapiConstants"/>
       <bendpoints>
       </bendpoints>
    </relationship>
    <relationship>
       <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
       <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Contact.java[Contact"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{ContactNym.java[ContactNym"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Storage.java[Storage"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OTPassword.java[OTPassword"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_uint8_t.java[SWIGTYPE_p_uint8_t"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otjavalib{Load.java[Load"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otjavalib{Load.java[Load[LoadingOpenTransactionsFailure"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{ContactAcct.java[ContactAcct"/>
       <bendpoints>
       </bendpoints>
    </relationship>
    <relationship>
       <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{MarketData.java[MarketData"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.association.AssociationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otjavalib{Load.java[Load[LoadingOpenTransactionsFailure"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otjavalib{Load.java[Load[LoadingOpenTransactionsFailure[LoadErrorType"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferListMarket.java[OfferListMarket"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{AskData.java[AskData"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Acct.java[Acct"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeDataNym.java[TradeDataNym"/>
       <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
       <bendpoints>
       </bendpoints>
    </relationship>
    <relationship>
       <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{MarketList.java[MarketList"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
-      <bendpoints>
-      </bendpoints>
-   </relationship>
-   <relationship>
-      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Blob.java[Blob"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeListNym.java[TradeListNym"/>
       <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
       <bendpoints>
       </bendpoints>
@@ -716,15 +450,57 @@
    </relationship>
    <relationship>
       <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Server.java[Server"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{ServerInfo.java[ServerInfo"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{MarketList.java[MarketList"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{AddressBook.java[AddressBook"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
       <bendpoints>
       </bendpoints>
    </relationship>
    <relationship>
       <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{ContactNym.java[ContactNym"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{ServerInfo.java[ServerInfo"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferListMarket.java[OfferListMarket"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{BidData.java[BidData"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeListMarket.java[TradeListMarket"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{BidData.java[BidData"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferDataMarket.java[OfferDataMarket"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Storage.java[Storage"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{WalletData.java[WalletData"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{LoomServer.java[LoomServer"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Storage.java[Storage"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_OTPacker.java[SWIGTYPE_p_OTPacker"/>
       <bendpoints>
       </bendpoints>
    </relationship>
@@ -737,22 +513,246 @@
    </relationship>
    <relationship>
       <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{RippleServer.java[RippleServer"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Server.java[Server"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeListNym.java[TradeListNym"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeDataNym.java[TradeDataNym"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Contact.java[Contact"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{ContactNym.java[ContactNym"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{WalletData.java[WalletData"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{BitcoinAcct.java[BitcoinAcct"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{StringMap.java[StringMap"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Contact.java[Contact"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otjavalib{Load.java[Load"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otjavalib{Load.java[Load[LoadingOpenTransactionsFailure"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OTPassword.java[OTPassword"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_void.java[SWIGTYPE_p_void"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.association.AssociationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otjavalib{Load.java[Load[LoadingOpenTransactionsFailure"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otjavalib{Load.java[Load[LoadingOpenTransactionsFailure[LoadErrorType"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{WalletData.java[WalletData"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{BitcoinServer.java[BitcoinServer"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OTPassword.java[OTPassword"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_int32_t.java[SWIGTYPE_p_int32_t"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Blob.java[Blob"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OTPassword.java[OTPassword"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_uint32_t.java[SWIGTYPE_p_uint32_t"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeDataMarket.java[TradeDataMarket"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{AskData.java[AskData"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferDataMarket.java[OfferDataMarket"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
       <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{BitcoinServer.java[BitcoinServer"/>
       <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Server.java[Server"/>
       <bendpoints>
       </bendpoints>
    </relationship>
    <relationship>
-      <class="edu.buffalo.cse.green.relationship.realization.RealizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{otapi.java[otapi"/>
-      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{otapiConstants.java[otapiConstants"/>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{BitcoinAcct.java[BitcoinAcct"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Acct.java[Acct"/>
       <bendpoints>
       </bendpoints>
    </relationship>
    <relationship>
       <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
-      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeListMarket.java[TradeListMarket"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Acct.java[Acct"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferDataMarket.java[OfferDataMarket"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Blob.java[Blob"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_std__vectorT_unsigned_char_t.java[SWIGTYPE_p_std__vectorT_unsigned_char_t"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferListNym.java[OfferListNym"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferDataNym.java[OfferDataNym"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{ContactNym.java[ContactNym"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{Server.java[Server"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{ServerInfo.java[ServerInfo"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferListMarket.java[OfferListMarket"/>
       <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{LoomServer.java[LoomServer"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Server.java[Server"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeListMarket.java[TradeListMarket"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{TradeDataMarket.java[TradeDataMarket"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OTPassword.java[OTPassword"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_uint8_t.java[SWIGTYPE_p_uint8_t"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OTDBString.java[OTDBString"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Storable.java[Storable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{MarketData.java[MarketData"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{AddressBook.java[AddressBook"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Contact.java[Contact"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{ContactAcct.java[ContactAcct"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.generalization.GeneralizationPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{OfferDataNym.java[OfferDataNym"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{Displayable.java[Displayable"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{StringMap.java[StringMap"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{SWIGTYPE_p_std__mapT_std__string_std__string_t.java[SWIGTYPE_p_std__mapT_std__string_std__string_t"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=otapij/src\/main\/java<org.opentransactions.otapi{ContactNym.java[ContactNym"/>
+      <targetType="=otapij/src\/main\/java<org.opentransactions.otapi{ServerInfo.java[ServerInfo"/>
       <bendpoints>
       </bendpoints>
    </relationship>

@@ -50,45 +50,39 @@ import org.opentransactions.otjavalib.Tools;
 public class OTManagerImpl implements OTManager, InitializingBean, DisposableBean {
 
     private String lastTestResult = new String("nothing yet");
+    private boolean otapiLoaded = false;
 
     @Override
-    public void afterPropertiesSet() throws Exception { }
+    public void afterPropertiesSet() throws Exception {
+		this.appendPathToRuntime("/usr/local/lib");
+		System.loadLibrary("otapi-java");
+		
+		
+		OTAPI_Basic.AppStartup();
+		OTAPI_Basic.Init();
+        
+		otapiLoaded = OTAPI_Basic.LoadWallet();
+		if(!otapiLoaded){
+			OTAPI_Basic.AppShutdown();
+			throw new RuntimeException("Failed to load the current wallet.");
+		}		
+    }
 
     @Override
-    public void destroy() throws Exception {}
+    public void destroy() throws Exception {
+    	if(otapiLoaded){
+    		OTAPI_Basic.AppShutdown();
+    		otapiLoaded = false;
+    	}
+    }
 
 	@Override
-	public String executeTest() {
-		
-		try{
-	/*		String command = "/usr/local/bin/opentxs stat";
-			Process opentxs = Runtime.getRuntime().exec(command);
-			BufferedReader reader = new BufferedReader(new InputStreamReader(opentxs.getInputStream()));
-			StringBuffer outputLog = new StringBuffer();
-
-			try {
-			    String s;
-			    while ((s=reader.readLine())!=null) {
-			    	outputLog.append(s);
-			        outputLog.append('\n'); //if you want the newline
-			    }
-
-			    //System.out.println(outputLog.toString());
-				this.lastTestResult = outputLog.toString();
-
-			 } catch (IOException ioe) {
-				 this.lastTestResult = ioe.toString();
-				 ioe.printStackTrace();
-			 }																*/
+	public String getServerState() {		
+		try{		
 			
-			this.appendPathToRuntime("/usr/local/lib");
-			System.loadLibrary("otapi-java");
-			
-			
-			OTAPI_Basic.AppStartup();
-			OTAPI_Basic.Init();
-            OTAPI_Basic.LoadWallet();
-            this.lastTestResult = String.valueOf(OTAPI_Basic.GetServerCount());
+
+            
+            
             OTAPI_Basic.Output(0, "OTAPI test");
             OTAPI_Basic.AppShutdown();
 			
