@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.opentransactions.org/0.89q" elementFormDefault="qualified" xmlns:tns="http://www.example.org/OTContract" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.opentransactions.org/0.89q">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<xsd:element name="mint" type="Mint"></xsd:element>
+
+	<xsd:complexType name="Mint">
+		<xsd:sequence>
+			<xsd:element name="mintPublicKey" type="xsd:string"></xsd:element>
+			<xsd:element name="mintPublicInfo" type="MintDenominationKey" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="version" type="xsd:string"></xsd:attribute>
+		<xsd:attribute name="serverID" type="xsd:string"></xsd:attribute>
+		<xsd:attribute name="assetTypeID" type="xsd:string"></xsd:attribute>
+		<xsd:attribute name="cashAcctID" type="xsd:string"></xsd:attribute>
+		<xsd:attribute name="series" type="xsd:int"></xsd:attribute>
+		<xsd:attribute name="expiration" type="xsd:dateTime"></xsd:attribute>
+		<xsd:attribute name="validFrom" type="xsd:dateTime"></xsd:attribute>
+		<xsd:attribute name="validTo" type="xsd:dateTime"></xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="MintDenominationKey">
+		<xsd:attribute name="denomination" type="xsd:int"></xsd:attribute>
+	</xsd:complexType>
+</xsd:schema>

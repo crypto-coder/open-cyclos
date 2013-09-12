@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.opentransactions.org/OTContract"
+	xmlns:tns="http://www.example.org/OTContract"
+	elementFormDefault="qualified"
+	xmlns:Q1="http://www.opentransactions.org/OTContract">
+
+
+
+
+
+
+	<include schemaLocation="Contract.xsd"></include>
+
+
+
+
+
+
+	<complexType name="CurrencyContract">
+		<complexContent>
+			<extension base="Q1:DigitalAssetContract">
+				<sequence>
+					<element name="currency" type="Q1:Currency"></element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="DigitalAssetContract">
+		<complexContent>
+			<extension base="Q1:Contract">
+				<sequence>
+					<element name="issue"
+						type="Q1:DigitalAssetIssuer">
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+
+	<complexType name="DigitalAssetIssuer">
+		<attribute name="company" type="string"></attribute>
+		<attribute name="email" type="string"></attribute>
+		<attribute name="contractURL" type="string"></attribute>
+		<attribute name="type" type="string"></attribute>
+	</complexType>
+
+	<complexType name="Currency">
+		<attribute name="name" type="string"></attribute>
+		<attribute name="tla" type="string"></attribute>
+		<attribute name="symbol" type="string"></attribute>
+		<attribute name="type" type="string"></attribute>
+		<attribute name="factor" type="string"></attribute>
+		<attribute name="decimal_power" type="string"></attribute>
+		<attribute name="fraction" type="string"></attribute>
+	</complexType>
+
+	<complexType name="Share">
+		<attribute name="name" type="string"></attribute>
+		<attribute name="symbol" type="string"></attribute>
+		<attribute name="type" type="string"></attribute>
+		<attribute name="issuedate" type="string"></attribute>
+	</complexType>
+
+
+	<complexType name="ShareContract">
+		<complexContent>
+			<extension base="Q1:DigitalAssetContract">
+				<sequence>
+					<element name="shares" type="Q1:Share"></element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	
+	
+	
+	
+	
+	<element name="digitalAssetContract"
+		type="Q1:DigitalAssetContract">
+	</element>
+	
+	
+	
+</schema>

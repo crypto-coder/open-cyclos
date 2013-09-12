@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.opentransactions.org/0.89q" elementFormDefault="qualified" xmlns:tns="http://www.example.org/OTContract" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.opentransactions.org/0.89q">
+
+	<xsd:complexType name="Purse">
+		<xsd:sequence>
+			<xsd:element name="token" type="xsd:string" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="version" type="xsd:string"></xsd:attribute>
+		<xsd:attribute name="userID" type="xsd:string"></xsd:attribute>
+		<xsd:attribute name="assetTypeID" type="xsd:string"></xsd:attribute>
+		<xsd:attribute name="serverID" type="xsd:string"></xsd:attribute>
+	</xsd:complexType>
+
+
+
+	<xsd:element name="purse" type="Purse"></xsd:element>
+
+
+</xsd:schema>

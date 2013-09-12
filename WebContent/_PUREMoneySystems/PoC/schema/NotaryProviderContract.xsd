@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.opentransactions.org/OTContract"
+	xmlns:tns="http://www.example.org/OTContract"
+	elementFormDefault="qualified"
+	xmlns:Q1="http://www.opentransactions.org/OTContract">
+
+
+
+
+
+
+	<include schemaLocation="Contract.xsd"></include>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	<element name="notaryProviderContract"
+		type="string">
+	</element>
+	
+	
+	
+
+	<complexType name="NotaryProviderContract">
+		<complexContent>
+			<extension base="Q1:Contract">
+				<sequence>
+					<element name="notaryServer"
+						type="Q1:NotaryServer">
+					</element>
+					<element name="connection" type="Q1:Connection" minOccurs="0" maxOccurs="unbounded"></element>
+				</sequence>
+				<attribute name="version" type="string"></attribute>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="NotaryServer">
+		<attribute name="hostname" type="string"></attribute>
+		<attribute name="port" type="string"></attribute>
+		<attribute name="URL" type="string"></attribute>
+	</complexType>
+
+	<complexType name="Connection">
+		<attribute name="protocol" type="string"></attribute>
+		<attribute name="transport" type="string"></attribute>
+		<attribute name="address" type="string"></attribute>
+	</complexType>
+</schema>

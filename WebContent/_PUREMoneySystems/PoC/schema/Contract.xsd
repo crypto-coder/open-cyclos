@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.opentransactions.org/OTContract"
+	xmlns:tns="http://www.example.org/OTContract"
+	elementFormDefault="qualified"
+	xmlns:Q1="http://www.opentransactions.org/OTContract">
+
+
+
+
+
+
+	<complexType name="Condition">
+		<attribute name="name" type="string"></attribute>
+	</complexType>
+
+	<complexType name="Contract">
+		<sequence>
+			<element name="entity" type="Q1:Entity"></element>
+			<element name="condition" type="Q1:Condition" minOccurs="1" maxOccurs="unbounded"></element>
+			<element name="signer" type="Q1:SigningParty" minOccurs="1" maxOccurs="unbounded"></element>
+			<element name="key" type="Q1:PublicKey" minOccurs="1" maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Entity">
+		<attribute name="shortname" type="string"></attribute>
+		<attribute name="longname" type="string"></attribute>
+		<attribute name="email" type="string"></attribute>
+		<attribute name="serverURL" type="string" use="optional"></attribute>
+	</complexType>
+
+	<complexType name="SigningParty">
+		<attribute name="nymID" type="string"></attribute>
+		<attribute name="hasCredentials" type="string"></attribute>
+		<attribute name="altLocation" type="string"></attribute>
+	</complexType>
+
+	<complexType name="PublicKey">
+		<attribute name="name" type="string"></attribute>
+	</complexType>
+
+
+
+
+
+</schema>
